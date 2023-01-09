@@ -1,0 +1,10 @@
+class_name: ApiTester
+modules:
+  enabled:
+    - Filesystem
+    - Yii2
+    - REST
+  config:
+    REST:
+      depends: PhpBrowser
+      url: http://127.0.0.1/base_yii/api/v1
